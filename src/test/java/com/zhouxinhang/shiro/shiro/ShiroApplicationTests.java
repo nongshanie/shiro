@@ -1,6 +1,5 @@
 package com.zhouxinhang.shiro.shiro;
 
-import com.zhouxinhang.shiro.shiro.realm.MyShiroRealm;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -18,13 +17,6 @@ public class ShiroApplicationTests {
 
     @Autowired
     private SecurityManager securityManager;
-
-    @Autowired
-    private MyShiroRealm myShiroRealm;
-
-    @Test
-    public void contextLoads() {
-    }
 
     @Test
     public void testLogin() {
@@ -47,7 +39,6 @@ public class ShiroApplicationTests {
         subject.logout();
         authenticated = subject.isAuthenticated();
         System.out.println("验证登录状态 = " + authenticated);
-
     }
 }
 

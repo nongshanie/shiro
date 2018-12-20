@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * @author: zhouxinhang
  * @date: 2018/12/20
- * @Description:
+ * @Description:用于shiro配置
  */
 @Configuration
 public class ShiroConfig {
