@@ -108,7 +108,8 @@ public class ShiroConfig {
         //散列的次数，默认1次， 设置两次相当于 md5(md5(""));
         hashedCredentialsMatcher.setHashIterations(3);
         return hashedCredentialsMatcher;
-        //test test  test
+        //test1 test1  test1
+
     }*/
 }
 
