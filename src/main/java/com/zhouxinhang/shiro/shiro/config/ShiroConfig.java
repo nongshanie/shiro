@@ -97,5 +97,18 @@ public class ShiroConfig {
         hashedCredentialsMatcher.setHashIterations(3);
         return hashedCredentialsMatcher;
     }
+    /**
+     * 加密
+     */
+   /* @Bean
+    public HashedCredentialsMatcher hashedCredentialsMatcher() {
+        HashedCredentialsMatcher hashedCredentialsMatcher = new HashedCredentialsMatcher();
+        //散列算法:MD2、MD5、SHA-1、SHA-256、SHA-384、SHA-512等。
+        hashedCredentialsMatcher.setHashAlgorithmName(Md5Hash.ALGORITHM_NAME);
+        //散列的次数，默认1次， 设置两次相当于 md5(md5(""));
+        hashedCredentialsMatcher.setHashIterations(3);
+        return hashedCredentialsMatcher;
+        //test test  test
+    }*/
 }
 
